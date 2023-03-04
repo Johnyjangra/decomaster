@@ -29,13 +29,13 @@
     --fw-300: 300;
 }
 
-/* .container {
+.container {
     max-width: 1320px !important;
     padding-left: 12px !important;
     padding-right: 12px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-} */
+}
 
 .fs-144 {
     font-size: var(--fs-144);
@@ -145,23 +145,25 @@
     margin-top: 10px;
 }
 
-/* .hovr_line {
+.hovr_line {
     position: relative;
-} */
+}
 
-/* .hovr_line::after {
+.hovr_line::before {
     content: "";
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: #9003E5;
     position: absolute;
-} */
+    bottom: 0;
+}
 
-/* .font_hvr:hover {
-    font-weight: 500;
-    color: #9003E5;
-    transition: all 0.2s linear;
-} */
+.hovr_line:hover::before {
+    /* font-weight: 500;
+    color: #9003E5; */
+    transition: all 0.5s linear;
+    width: 100%;
+}
 
 .italic {
     font-style: italic;
@@ -251,8 +253,8 @@
     width: 85%;
 }
 
-.left_25 {
-    left: 23%;
+.left_24 {
+    left: 24%;
 }
 
 .top_35 {
@@ -308,8 +310,8 @@
     left: -10%;
 }
 
-.top_60 {
-    top: 60%;
+.top_52 {
+    top: 52%;
 }
 
 .ryt_8 {
@@ -374,7 +376,6 @@
 
 @media (max-width:992px) {
 
-
     .h_lg_100 {
         height: 100vh;
     }
@@ -388,16 +389,17 @@
     }
 
     .ul_bg {
-        background-color: rgba(255, 255, 255, 0.4);
+        /* background-color: rgba(255, 255, 255, 0.4); */
         backdrop-filter: blur(30px);
+        background-color: #D2DA60;
     }
 
     .top_101 {
-        top: 101.3%;
+        top: 100.3%;
     }
 
     .ul_height {
-        height: calc(100vh - 11vh);
+        height: calc(100vh - 5vh);
     }
 
     .l_m100 {
@@ -471,9 +473,6 @@
     .mt_xl_0 {
         margin-top: 0 !important;
     }
-
-
-
 }
 
 @media (min-width:576px) {
@@ -665,8 +664,8 @@
         right: -80px;
     }
 
-    .w_lg_80 {
-        width: 80%;
+    .w_lg_70 {
+        width: 70%;
     }
 
     .grid_container {
@@ -731,8 +730,8 @@
         left: 2%;
     }
 
-    .top_26 {
-        top: 26%;
+    .top_30 {
+        top: 30%;
     }
 
     .z_m1 {
@@ -761,6 +760,26 @@
 
     .order_lg_7 {
         order: 7;
+    }
+
+    .right_110 {
+        right: -110px;
+    }
+
+    .w_68 {
+        width: 68%;
+    }
+
+    .ryt_lg_m16 {
+        right: -16%;
+    }
+
+    .l_m7 {
+        left: -7%;
+    }
+
+    .bottom_16 {
+        bottom: -6%;
     }
 }
 
@@ -801,6 +820,10 @@
 
     .top_m72 {
         top: -72%;
+    }
+
+    .l_m3 {
+        left: -3%;
     }
 }
 
@@ -867,13 +890,36 @@
         left: 6%;
     }
 
-    .top_29 {
-        top: 29%;
+    .top_31 {
+        top: 31%;
     }
 
-    .wid_85 {
-        max-width: 85% !important;
+    .wid_80 {
+        max-width: 80% !important;
+    }
 
+    .l_m7 {
+        left: -7%;
+    }
+
+    .top_m80 {
+        top: -80%;
+    }
+
+    .ryt_m12 {
+        right: -12%;
+    }
+
+    .l_m1 {
+        left: -1%;
+    }
+
+    .w_65 {
+        width: 65%;
+    }
+
+    .left_m10 {
+        left: -10%;
     }
 }
 
@@ -936,8 +982,28 @@
         left: 8%;
     }
 
-    .top_20 {
-        top: 27%;
+    .r_m8 {
+        right: -8%;
+    }
+
+    .w_75 {
+        width: 75%;
+    }
+
+    .l_m8 {
+        left: -8%;
+    }
+
+    .top_46 {
+        top: 60%;
+    }
+
+    .right_11 {
+        right: -11%;
+    }
+
+    .w_65 {
+        width: 65%;
     }
 
 }
@@ -965,8 +1031,8 @@
         top: -90%;
     }
 
-    .r_m12 {
-        right: -11%;
+    .r_m14 {
+        right: -14%;
     }
 
     .lxxl_5 {
@@ -996,6 +1062,18 @@
     .mt_200 {
         margin-top: 180px !important;
     }
+
+    .l_m1 {
+        left: -1%;
+    }
+
+    .r_m5 {
+        right: -5%;
+    }
+
+    .w_80 {
+        width: 80%;
+    }
 }
 
 @media (min-width:1600px) {
@@ -1017,8 +1095,20 @@
         left: 8%;
     }
 
-    .top_20 {
-        top: 20%;
+    .top_27 {
+        top: 27%;
+    }
+
+    .r_m4 {
+        right: -4%;
+    }
+
+    .w_83 {
+        width: 83%;
+    }
+
+    .btm_m14 {
+        bottom: -14%;
     }
 }
 
@@ -1039,8 +1129,8 @@
         left: 8%;
     }
 
-    .top_17 {
-        top: 17%;
+    .top_24 {
+        top: 24%;
     }
 
     .w_82 {
@@ -1061,11 +1151,23 @@
         left: 8%;
     }
 
-    .top_14 {
-        top: 15%;
+    .top_25 {
+        top: 25%;
     }
 
     .w_82 {
         width: 82%;
+    }
+
+    .r_0 {
+        right: 0;
+    }
+
+    .w_100 {
+        width: 100%;
+    }
+
+    .r_m3 {
+        right: -3%;
     }
 }
